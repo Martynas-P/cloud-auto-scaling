@@ -1,0 +1,57 @@
+CPU="0.5"
+DISK=[
+  DRIVER="tap:qcow2:",
+  IMAGE="Debian Squeeze x86_64 HVM Worker",
+  IMAGE_UNAME="sc11mp",
+  TARGET="hda" ]
+GRAPHICS=[
+  KEYMAP="en-gb",
+  LISTEN="0.0.0.0",
+  PASSWD="password",
+  TYPE="vnc" ]
+MEMORY="256"
+NAME="Debian Squeeze x86_64 HVM (VNC) Worker Instance"
+NIC=[
+  MODEL="e1000",
+  NETWORK="Private NAT for sc11mp",
+  NETWORK_UNAME="sc11mp" ]
+OS=[
+  BOOTLOADER="/usr/lib/xen/boot/hvmloader" ]
+RAW=[
+  DATA="builder='hvm'",
+  TYPE="xen" ]
+RAW=[
+  DATA="device_model='/usr/lib64/xen/bin/qemu-dm'",
+  TYPE="xen" ]
+RAW=[
+  DATA="on_poweroff='destroy'",
+  TYPE="xen" ]
+RAW=[
+  DATA="on_reboot='restart'",
+  TYPE="xen" ]
+RAW=[
+  DATA="on_crash='restart'",
+  TYPE="xen" ]
+RAW=[
+  DATA="localtime=1",
+  TYPE="xen" ]
+RAW=[
+  DATA="usbdevice='tablet'",
+  TYPE="xen" ]
+RAW=[
+  DATA="monitor=1",
+  TYPE="xen" ]
+RAW=[
+  DATA="serial='pty'",
+  TYPE="xen" ]
+RAW=[
+  DATA="boot='cd'",
+  TYPE="xen" ]
+RAW=[
+  DATA="sdl=0",
+  TYPE="xen" ]
+RAW=[
+  DATA="xen_platform_pci=0",
+  TYPE="xen" ]
+TEMPLATE_ID="46"
+VCPU="1"
