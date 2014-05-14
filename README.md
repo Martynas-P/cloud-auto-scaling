@@ -1,5 +1,5 @@
 # Cloud Auto-Scaling
-==================
+
 ## About
 This my Final Year Project for the BSc Computer Science course at University of Leeds.
 
